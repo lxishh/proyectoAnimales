@@ -8,7 +8,11 @@
     <link href="{%static 'css/styles.css'%}" rel="stylesheet">
 </head>
 <body>
-    <h1>Listado de Animales</h1>
-    <a href="{%url 'rGato'%}">Gato</a>
+    <div id="divL"> 
+        <h1>Listado de Animales</h1>
+        <a href="{%url 'rPerro'%}"><img src="{%static 'images/perro.jpg'%}"></a>
+        <a href="{%url 'rGato'%}"><img src="{%static 'images/gato.jpeg'%}"></a>
+        <a href="{%url 'rCaballo'%}"><img src="{%static 'images/caballo.png'%}"></a>
+    </div>
 </body>
 </html>

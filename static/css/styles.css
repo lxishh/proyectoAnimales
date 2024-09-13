@@ -1,3 +1,18 @@
 #imgT{
     width: 200px;
 }
+
+#divT{
+    text-align: center;
+}
+
+#divL{
+    text-align: center;
+}
+
+#divL img{
+    text-align: center;
+    width: 200px;
+    display: inline;
+    margin: auto;
+}

@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from appAnimales.views import renderListado, renderPerro, renderGato
+from appAnimales.views import renderListado, renderPerro, renderGato, renderCaballo
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', renderListado, name='rListado'),
     path('perro/', renderPerro, name='rPerro'),
-    path('gato/', renderGato, name='rGato')
+    path('gato/', renderGato, name='rGato'),
+    path('caballo/', renderCaballo, name='rCaballo')
 ]

@@ -8,10 +8,12 @@
     <link href="{%static 'css/styles.css'%}" rel="stylesheet">
 </head>
 <body>
-    <h1>{{nombre}}</h1>
-    <img id="imgT" src="{%static 'images/'%}{{imagen}}">
-    <p>{{descripcion}}</p>
-    <p>{{valoracion}}</p>
-    <a href="{%url 'rListado'%}">Volver</a>
+    <div id="divT"> 
+        <h1>{{nombre}}</h1>
+        <img id="imgT" src="{%static 'images/'%}{{imagen}}">
+        <p>{{descripcion}}</p>
+        <p>{{valoracion}}</p>
+        <a href="{%url 'rListado'%}">Volver</a>
+    </div>
 </body>
 </html>
