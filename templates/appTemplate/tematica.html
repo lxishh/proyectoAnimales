@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{%load static%}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,10 @@
     <link href="{%static 'css/styles.css'%}" rel="stylesheet">
 </head>
 <body>
-    <h1>Listado de Animales</h1>
-    <a href="{%url 'rGato'%}">Gato</a>
+    <h1>{{nombre}}</h1>
+    <img id="imgT" src="{%static 'images/'%}{{imagen}}">
+    <p>{{descripcion}}</p>
+    <p>{{valoracion}}</p>
+    <a href="{%url 'rListado'%}">Volver</a>
 </body>
 </html>
