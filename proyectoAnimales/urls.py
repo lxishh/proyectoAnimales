@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from appAnimales.views import renderListado
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('listado/', renderListado)
 ]
